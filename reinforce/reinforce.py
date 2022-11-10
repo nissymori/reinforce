@@ -9,10 +9,10 @@ import torch.optim as optim
 from gym.vector.vector_env import VectorEnv
 from torch.distributions import Categorical
 
-import reinforce as rf
+from .core import REINFORCEABC 
 
 
-class REINFORCE(rf.REINFORCEABC):
+class REINFORCE(REINFORCEABC):
     def __init__(self):
         self.n_steps: int = 0
         self.n_episodes: int = 0

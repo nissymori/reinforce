@@ -1,14 +1,14 @@
 # Copyright (c) 2021 Sotetsu KOYAMADA
 # https://github.com/sotetsuk/reinforce/blob/master/LICENSE
 
-from reinforce.core import REINFORCEABC
-from reinforce.mixin import (
+from .core import REINFORCEABC
+from .mixin import (
     BatchAvgBaselineMixin,
     EntLossMixin,
     FutureRewardMixin,
 )
-from reinforce.reinforce import REINFORCE
-from reinforce.vector_env import EpisodicAsyncVectorEnv, EpisodicSyncVectorEnv
+from .reinforce import REINFORCE
+from .vector_env import EpisodicAsyncVectorEnv, EpisodicSyncVectorEnv
 
 __all__ = [
     "REINFORCE",
